@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sum of Numbers</title>
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="simple-calculator-section">
+      <div class="calculator-wrapper flex-wrapper">
+        <div class="simple-calculator">
+          <form action="" class="form-wrapper flex-wrapper">
+            <div class="form-input flex-wrapper">
+              <label for="first-value">Enter The First Value</label>
+              <input type="text" name="first-value" id="first-value" />
+            </div>
+            <div class="form-input flex-wrapper">
+              <label for="second-value">Enter The Second Value</label>
+              <input type="text" name="second-value" id="second-value" />
+            </div>
+            <div class="form-input flex-wrapper">
+              <label for="sum">Sum of The Values</label>
+              <input
+                type="button"
+                value="Sum"
+                id="sum-value"
+                onclick="sum_value()"
+              />
+            </div>
+            <div class="form-input flex-wrapper">
+              <p id="sum-of-value"></p>
+            </div>
+          </form>
+        </div>
+        <div class="double-implementation">
+            <a href="doule-cal.html">Vist Now</a>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="/function/script.js"></script>
+</html>
