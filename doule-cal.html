@@ -3,16 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sum of Numbers</title>
-    <link rel="stylesheet" href="/style/style.css" />
+    <title>Advanced Calculator</title>
+    <link rel="stylesheet" href="./style/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
@@ -20,44 +18,47 @@
   </head>
   <body>
     <section id="simple-calculator-section">
-      <div class="calculator-wrapper flex-wrapper">
-        <div class="simple-calculator simple-calculator2">
-          <form action="" class="form-wrapper flex-wrapper">
-            <div class="form-input flex-wrapper">
-              <label for="first-value">Enter The First Value</label>
-              <input type="text" name="first-value" id="first-value" />
-            </div>
-            <div class="form-input flex-wrapper">
-              <label for="second-value">Enter The Second Value</label>
-              <input type="text" name="second-value" id="second-value" />
-            </div>
-            <div class="button-wrapper flex-wrapper">
+      <div class="calculator-wrapper">
+        <div class="calculator-card advanced-card">
+          <div class="card-header">
+            <span class="badge">Advanced Mode</span>
+            <h1>Dual Operation Calculator</h1>
+            <p>Perform both addition and subtraction from one elegant workspace.</p>
+          </div>
+
+          <form class="form-wrapper">
             <div class="form-input">
-              <label for="sum">Sum of The Values</label>
-              <input
-                type="button"
-                value="Sum"
-                id="sum-value"
-                onclick="sum_value()"
-              />
+              <label for="first-value">First Value</label>
+              <input type="text" name="first-value" id="first-value" placeholder="Enter first number" />
             </div>
+
             <div class="form-input">
-              <label for="sum">Subtraction of The Values</label>
-              <input
-                type="button"
-                value="Subtraction"
-                id="sum-value"
-                onclick="sub_value()"
-              />
+              <label for="second-value">Second Value</label>
+              <input type="text" name="second-value" id="second-value" placeholder="Enter second number" />
             </div>
+
+            <div class="button-wrapper">
+              <div class="form-input">
+                <input type="button" value="Add" id="sum-value" onclick="sum_value()" />
+              </div>
+              <div class="form-input">
+                <input type="button" value="Subtract" class="secondary-action" onclick="sub_value()" />
+              </div>
             </div>
-            <div class="form-input flex-wrapper">
-              <p id="sum-of-value"></p>
+
+            <div class="button-wrapper single-action-wrapper">
+              <div class="form-input">
+                <input type="button" value="Clear" class="clear-action" onclick="clear_values()" />
+              </div>
+            </div>
+
+            <div class="result-box" id="sum-of-value" aria-live="polite">
+              Your result will appear here.
             </div>
           </form>
         </div>
       </div>
     </section>
   </body>
-  <script src="/function/script.js"></script>
+  <script src="./function/script.js"></script>
 </html>
